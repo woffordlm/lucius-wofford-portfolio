@@ -1,0 +1,322 @@
+:root {
+    --first-color: burlywood;
+    --sec-color:cadetblue;
+    --third-color:black;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color:var(--sec-color) ;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+}
+/* header section */
+header {
+    padding: 20px, 35px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/assets/images/landscape.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color:var(--third-color);
+    margin:0%;
+    padding: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color:var(--third-color);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+
+/* hero section */
+.hero {
+    background-image: url(/assets/images/landscape.JPG) ;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    
+    
+}
+/* section title stylings */
+
+.section-title {
+    font-size: 48px;
+    /* border-bottom: 3px solid; */
+    color: var(--third-color);
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto 0px auto;
+    width: 50%;
+}
+
+/* About Me section */
+.aboutMe {
+    background-color: var(--first-color);
+}
+
+.flex-row {
+    display: flex;
+  }
+
+.aboutMe h2 {
+    color: var(--third-color);
+}
+
+.image-bio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items:stretch ;
+  }
+
+.bio-1  {
+    flex:1 ;
+    margin: 15px;
+    padding:20px ;
+    line-height: 2;
+    font-size: 2vw;
+  }
+
+  .bio-2 {
+    flex: 3;
+    margin: 33px;
+    padding: 16px;
+    font-size: 1.55vw;
+    line-height: 1.5;
+    background-color: var(--sec-color);
+    border-radius: 15px;
+  }
+
+  .image-bio img {
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+  }
+  hr {
+    width: 50%;
+  }
+  /* work section */
+  .work {
+    background-color: var(--first-color);
+
+  }
+  .app-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+  }
+
+  .app-parent a {
+    text-decoration: none;
+    color:var(--third-color);
+  }
+
+  .app-parent a:hover {
+    text-decoration: none;
+    color:palevioletred;
+  }
+
+  .app-child {
+    border: var(--third-color) solid 1px;
+    height: 500px;
+    flex: 1;
+    font-size: 3vw;
+    margin: 5px;
+    border-radius: 15px;    
+  }
+  .work h3 {
+    padding: 20px;
+  }
+
+ .app-child a {
+    color: white;
+  
+  }
+  .child-1  {
+    background-image:url(/assets/images/run-buddy.jpg) ;
+    width: 90%;
+    flex: 2;
+    height: 500px;
+    background-size: cover;
+    background-position:center;
+    background: position 80%;;
+
+}
+.child-2 {
+    background-image:url(https://via.placeholder.com/150) ;
+}
+.app-parent h3 {
+    width: 100%;
+    height: 100%;
+}
+/* contact me section */
+.contact-me {
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.contact p {
+    text-align:center;
+    flex: 1;
+    line-height: 2;
+}
+
+/* resume html page styling */
+.resume-parent {
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.resume-child {
+    flex: 1;
+}
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 20px;
+      justify-content: center;
+      position: relative;
+      
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+    .image-bio {
+      flex-direction: column;
+    }
+    .bio-1 {
+        text-align: center;
+    }
+    .flex-row h2 {
+      font-size: 30px ;
+    }
+    .bio-2 {
+        font-size: 3vw;
+        margin: 0%;
+    }
+    .hero {
+        display: none;
+    }
+    .app-parent {
+        flex-direction: column;
+    }
+   
+    .child-1 {
+        width: 100%;
+  }
+}
+
+    @media screen and (max-width: 568px) {
+      header {
+      padding-bottom: 0px;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 80%;
+      text-align: center;
+    }
+    .bio-1 img {
+      width: 300px;
+      height: 300px;
+      margin: 0px;
+      
+    }
+    .bio-2 {
+      font-size: 2.55vw;
+    }
+    header {
+      padding: 20px;
+      justify-content: center ;
+      position: relative;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+    .image-bio {
+      flex-direction: column;
+    }
+    .bio-1 {
+        text-align: center;
+    }
+    .bio-2 {
+        align-self: center;
+    }
+    .hero {
+        display: none;
+    }
+    .app-parent {
+        flex-direction: column;
+    }
+    .app-child {
+      margin:0;
+      margin-bottom: 5px;
+      width: 90% ;
+      align-self: center;
+      
+    }
+  }
+  
+ 
+  @media screen and (max-width: 568px) {
+    .bio-1 img {
+      width: 200px;
+      height: 200px;
+}
+  }
