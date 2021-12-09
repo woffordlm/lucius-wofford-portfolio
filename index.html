@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- the head sets up  some boiler plate html structure -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- this link connects the html to the css page -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+  <!-- within the header there is an h1 element that links to the index and a navigation bar that links to other sections of the webpage -->
     <header>
         <h1>
-          <a href="/">Luke Wofford</a>     
+          <a href="index.html">Luke Wofford</a>     
         </h1>
         <nav>
             <ul>
@@ -24,13 +27,16 @@
                     <a href="#contact">Contact Me</a>
                 </li>
                 <li>
-                    <a href="./assets/images/Wofford_ Resume.svg">Resume</a>
+                    <a href="./Resume.html">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <!-- this hero section contains a background image that bleeds into the header -->
     <section class="hero"></section>
     <main>
+      <!-- This section controls the About Me section -->
+      <!-- this section showcases the use of flexbox and the relation between the parent and the children  -->
       <section id="aboutMe" class="aboutMe">
         <div class="flex-row">
           <h2 class="section-title">About Me</h2>
@@ -70,6 +76,7 @@
           </div>     
         </div> 
       </section> 
+      <!-- this section showcases images and links to portfolio work  -->
       <section id="work" class="work">
         <div class="flex-row">
           <h2 class="section-title">Work</h2> 
@@ -103,6 +110,7 @@
         </div>
       </section>  
     </main>
+    <!-- the footer diplays contact info -->
     <footer id="contact" class="contact">
       <div class="flex-row">
         <h2 class="section-title">Contact Me</h2>

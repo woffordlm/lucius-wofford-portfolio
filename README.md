@@ -7,9 +7,9 @@ A website that showcases Luke Wofford's portfolio of projects and bio.
 * CSS
 
 ## Screenshots
-![](assets/images/screenshot1.jpg)
-![](assets/images/screenshot2.jpg)
-![](assets/images/screenshot3.jpg)
+![](./assets/images/screenshot1.jpg)
+![](./assets/images/screenshot2.jpg)
+![](./assets/images/screenshot3.jpg)
 
 ## Website
  https://woffordlm.github.io/lucius-wofford-portfolio/
